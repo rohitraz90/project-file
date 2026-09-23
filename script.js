@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_BASE = "https://project-file-7x7n.onrender.com";
+  const API_BASE = "https://project-file-1.onrender.com";
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
