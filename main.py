@@ -45,8 +45,16 @@ class PredictionResponse(BaseModel):
 
 
 @app.get('/')
-def greet():
-    return {'Welcome to Sheryians AI School Guys'}
+def serve_ui():
+    return FileResponse('index.html')
+
+@app.get('/style.css')
+def serve_css():
+    return FileResponse('style.css')
+
+@app.get('/script.js')
+def serve_js():
+    return FileResponse('script.js')
 
 
 @app.post('/predict', response_model=PredictionResponse) #6.77777
